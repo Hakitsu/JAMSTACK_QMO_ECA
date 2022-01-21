@@ -24,7 +24,7 @@ const printData = (data) => {
 
 const writeData = (data, info, url) => {
   const newContent = document.createElement("div");
-  newContent.classList.add('grid');
+  newContent.classList.add('titre');
   newContent.innerText = data;
   
   var elem = document.createElement("img");
@@ -33,7 +33,7 @@ const writeData = (data, info, url) => {
   document.body.appendChild(newContent).appendChild(elem);
 
 
-  const infor = document.createElement("div");
+  const infor = document.createElement("p");
   infor.classList.add('info');
   infor.innerText = info;
 

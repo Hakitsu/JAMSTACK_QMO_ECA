@@ -24,8 +24,13 @@ const printData = (data) => {
 
 const writeData = (data, info, url) => {
   const newContent = document.createElement("div");
-  newContent.classList.add('titre');
-  newContent.innerText = data;
+  newContent.classList.add('bouquin');
+
+  const titre = document.createElement("p");
+  titre.classList.add('titre');
+  titre.innerText = data;
+
+  document.body.appendChild(newContent).appendChild(titre);
   
   var elem = document.createElement("img");
   elem.setAttribute("src", url);
